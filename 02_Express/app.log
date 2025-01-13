@@ -1,0 +1,8 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/teas\",\"status\":\"201\",\"responseTime\":\"52.640\"}","timestamp":"2025-01-07T06:38:18.359Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/teas\",\"status\":\"201\",\"responseTime\":\"2.177\"}","timestamp":"2025-01-07T06:38:28.153Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/teas\",\"status\":\"201\",\"responseTime\":\"0.972\"}","timestamp":"2025-01-07T06:38:34.956Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/teas\",\"status\":\"200\",\"responseTime\":\"0.750\"}","timestamp":"2025-01-07T06:40:16.788Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"a logger is running at add a tea","timestamp":"2025-01-07T06:43:41.927Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/teas\",\"status\":\"201\",\"responseTime\":\"51.299\"}","timestamp":"2025-01-07T06:43:41.943Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"a logger is running at add a tea","timestamp":"2025-01-07T06:50:00.410Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/teas\",\"status\":\"201\",\"responseTime\":\"41.200\"}","timestamp":"2025-01-07T06:50:00.422Z"}

@@ -1,8 +1,28 @@
 import "dotenv/config";
 import express from "express";
+import logger from "./logger.js"; //using a logger
+import morgan from "morgan"; //using a logger
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+//logger
+const morganFormat = ":method :url :status :response-time ms";
+app.use(
+  morgan(morganFormat, {
+    stream: {
+      write: (message) => {
+        const logObject = {
+          method: message.split(" ")[0],
+          url: message.split(" ")[1],
+          status: message.split(" ")[2],
+          responseTime: message.split(" ")[3],
+        };
+        logger.info(JSON.stringify(logObject));
+      },
+    },
+  })
+);
 
 app.use(express.json());
 // In order to run the server first go to the target folder using cd like cd 02_Express as index.js file is inside this folder then run command like npm run dev so that the server start running and listening the port also so that the nodemon also start listening as both are inside script
@@ -10,6 +30,7 @@ let teaData = [];
 let nextid = 1;
 // this is add a new tea object
 app.post("/teas", (req, res) => {
+  logger.warn("a logger is running at add a tea");
   const { name, price } = req.body;
   const newTea = { id: nextid++, name, price };
   teaData.push(newTea);
